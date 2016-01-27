@@ -1,0 +1,494 @@
+/*-----------------------------------Media queries------------------------------*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1230px) {
+    .navbar {
+        .navbar-inner {
+            padding: 0 20px;
+            .container-fluid {
+                width: 100%;
+            }
+            &.navbar-sub {
+                .span1 {
+                    border-left: 0!important;
+                }
+            }
+        }   
+    }
+    .container {
+        width: 100%;
+        padding: 20px;
+        #manzamaMentionsSection {
+            .radio-button-list {
+                li {
+                    width: 33%;
+                    margin: 0;
+                    float: left;
+                }
+            }
+            .dataTables_footer {
+                #mentionsTable_info {
+                    width: 50%!important;
+                }
+            }
+        }
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 979px) {
+
+    /*landing page*/
+    #landingPageContainer {
+        #aboutLexology {
+            .info-text {
+               padding: 30px 50px;
+            }
+            .info-card {
+                height: auto!important;
+            }
+        }
+    }
+
+
+    /*Navigation*/
+    .navbar {
+        .navbar-inner {
+            padding: 0px;
+            .container-fluid {
+                #navbar-topbar {
+                    height: auto;
+                    .brand {
+                        max-width: 100%;
+                        width: auto;
+                        padding: 10px 20px!important;
+                        .intelligence-logo {
+                            padding: 0;
+                        }
+                    }
+                    .btn-navbar {
+                        margin: 0;
+                        background: transparent;
+                        border: none;
+                        text-shadow: none;
+                        padding: 15px 20px;
+                    }
+                    .nav-collapse {                        
+                        background: @text;
+                        width: 100%;
+                        transition: height 0.4s;
+                        &.in {
+                            height: auto!important;
+                        }
+                        .nav {
+                            li {
+                                width: 100%;
+                                a {
+                                    padding: 20px;
+                                    margin: 0;
+                                    background: transparent;
+                                    border-radius: 0;
+                                    width: 100%;
+                                    font-weight: normal;
+                                    border-bottom: 1px solid lighten(@text, 5%);
+                                    &:hover {
+                                        background: darken(@text, 5%);
+                                    }
+                                }
+                                ul.side-slide-behind {
+                                    margin: 0;
+                                    position: relative;
+                                    display: block;
+                                    border-bottom: 1px solid lighten(@text, 5%);
+                                    li {
+                                        display: block;
+                                        padding: 0;
+                                        a {
+                                            padding: 20px;
+                                            display: block;
+                                            width: 100%;
+                                            border-bottom: none;
+                                        }
+                                    }
+                                }
+                            }                 
+                        }
+                    }
+                }
+                #filters-summary {
+                    padding: 0 20px 0 0;
+                    .filtersToggle {
+                        padding-left: 15px!important;
+                    }
+                }
+                #filters-detail {
+                    padding: 20px;
+                }
+            }  
+        }
+    }
+    .navbar .navbar-inner #navbar-topbar .nav li.dropdown.open>.dropdown-toggle {
+        background: lighten(@text, 10%);
+    }
+    /*Main*/
+    .container {
+        width: 100%;
+        padding: 0 20px;
+        .hdr {
+            margin: 0 0 10px 0;
+        }
+        #termFrequency, #manzamaMentionsSection {
+            width: 49.5%!important;
+        }
+        span.hint {
+            display: none;
+        }
+    }
+    /*table-responsive*/
+    .table-responsive {
+    width: 100%;
+    overflow-y: hidden;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+
+    th.title {
+        min-width: 400px;
+    }
+  }
+  .table-responsive > .table {
+    margin-bottom: 0;
+  }
+  .table-responsive > .table-bordered {
+    border: 0;
+  }
+  .table-responsive > .table-bordered > thead > tr > th:first-child,
+  .table-responsive > .table-bordered > tbody > tr > th:first-child,
+  .table-responsive > .table-bordered > tfoot > tr > th:first-child,
+  .table-responsive > .table-bordered > thead > tr > td:first-child,
+  .table-responsive > .table-bordered > tbody > tr > td:first-child,
+  .table-responsive > .table-bordered > tfoot > tr > td:first-child {
+    border-left: 0;
+  }
+  .table-responsive > .table-bordered > thead > tr > th:last-child,
+  .table-responsive > .table-bordered > tbody > tr > th:last-child,
+  .table-responsive > .table-bordered > tfoot > tr > th:last-child,
+  .table-responsive > .table-bordered > thead > tr > td:last-child,
+  .table-responsive > .table-bordered > tbody > tr > td:last-child,
+  .table-responsive > .table-bordered > tfoot > tr > td:last-child {
+    border-right: 0;
+  }
+  .table-responsive > .table-bordered > tbody > tr:last-child > th,
+  .table-responsive > .table-bordered > tfoot > tr:last-child > th,
+  .table-responsive > .table-bordered > tbody > tr:last-child > td,
+  .table-responsive > .table-bordered > tfoot > tr:last-child > td {
+    border-bottom: 0;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    body {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+        margin-right: -20px;
+        margin-left: -20px;
+    }
+    [class*="span"], .row-fluid [class*="span"] {
+        float: left;
+    }
+
+    /*landing page*/
+    #main .row-fluid {
+        margin-bottom: 10px!important;
+        #aboutLexology {
+            .info-card-wrapper {
+                display: block;
+                .info-card {
+                    width: 50%;
+                    min-height: 180px;
+                }
+            }            
+        }
+        .span8, .span4 {
+            width: 100%;
+            margin: 0;
+        }
+        #subscribedCompaniesSection {
+            #mostReadArticlesList {
+                li {
+                    padding-top: 5px;
+                }
+            }
+        }
+    }
+    
+
+    /*navigation*/
+
+    .navbar-sub {
+
+        #filters-summary {
+            padding-right: 0!important;
+            .span1 {
+                border: none!important;
+                width: 100%!important;
+                float: left;
+                padding-left: 5px;
+            }
+            .breadcrumb, .breadcrumb-clear {
+                display: none;
+            }
+        }
+        .filter-area  {
+            padding: 0!important;
+            .filterInputSet {
+                float: left;
+                width: 100%!important;
+                padding: 20px 20px 0px;
+                border-top: 1px solid @dividers;
+                .filterInner {
+                    select.ddlSelectPeriod {
+                        width: 50%!important;
+                        margin: 0!important;
+                    }
+                    .filterAlignLeft {
+                        width: 50%!important;
+                        padding-left: 10px;
+                        margin: 0!important;
+                        text-align: center;
+                        .datepickerinput {
+                            width: 45%!important;
+                            &[name="from"] {
+                                float: left;
+                            }
+                            &[name="to"] {
+                                float: right;
+                            }
+                        }
+                        span.divider {
+                            top: 7px;
+                            position: relative;
+                        }
+                    }
+                }
+            }
+            .companyid {
+                float: left;
+                width: 100%!important;
+                padding: 10px 20px 20px;
+                .select2 {
+                    width: 100%!important;
+                }
+            }
+            .filterButtons {
+                float: left;
+                width: 100%;
+                margin: 0!important;
+                input, a {
+                    width: 50%!important;
+                    border-radius: 0!important;
+                    padding: 15px!important;
+                }
+                a {
+                    font-size: 15px;
+                    display: block;
+                    padding: 15px!important;
+                    border: 0!important;
+                    box-sizing: border-box;
+                    float: left;
+                    border-left: none!important;
+                    border-right: none!important;
+                    text-align: center;
+                    background: @dividers!important;
+                    color:@text!important;
+                    &:hover {
+                        background: darken(@dividers, 10%)!important;
+                    }
+                }
+            }
+        }
+        .welcome-message {
+            display: none;
+        }
+    }
+    .container {
+        padding: 0;
+        .hdr {
+            a#toggleFollowingCompanyLink {
+                display: none;
+            }
+            h1 {
+                font-size: 20px;
+                line-height: 25px;
+            }
+            
+        }
+        .row-fluid {
+            margin: 0!important;
+        }
+        .articles-list {
+            .dataTables_footer {
+                .dataTables_length {
+                    display: none;
+                }
+                .dataTables_paginate {
+                    width: 100%;
+                }
+                #articlesListTable_info {
+                    width: 100%;
+                    text-align:center;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+        #main #firstRow, #secondRow {
+            display: block;
+            margin: 0!important;
+            #workareas {
+                height: auto;
+            }
+        }
+        #workAreasSection,
+        #jurisdictionsSection,
+        #termFrequency,
+        #manzamaMentionsSection {
+            width: 100%!important;
+            margin: 0 0 10px 0!important;
+            height: auto;
+        }
+        #mentionsSection {
+            .radio-button-list {
+                li {
+                    label {
+                        width: 100%;
+                    }
+                }
+            }
+            #mentionsTable {
+                height: auto!important;
+                padding-bottom: 10px;
+            }
+            .dataTables_footer {
+                float: left;
+                width: 100%;
+            }
+            .dataTables_info {
+                float: left;
+                text-align: left;
+            }
+            #mentionsTable_paginate {
+                float: right;
+            }
+            
+        }
+        #manzamaLogoLink {
+            position: relative!important;
+        }
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+    /*landing page*/
+    body {
+        padding-right: 10px;
+        padding-left: 10px;
+        .navbar-fixed-top {
+            margin-bottom: 10px; 
+            margin-right: -10px;
+            margin-right: -10px;
+        }
+        .navbar {
+            #navbar-topbar {
+                .brand {
+                    img {
+                        height: 12px;
+                        width: auto;
+                    }
+                }
+            }
+        }
+        #landingPageContainer {
+            .row-fluid {
+                margin-bottom: 10px!important;
+            }
+            #aboutLexology {
+                .info-text {
+                    padding: 20px!important;
+                }
+                .info-card-wrapper {
+                    .info-card {
+                        width: 100%!important;
+                        min-height: auto!important;
+                        padding-bottom: 50px!important;
+                        &.grey {
+                            padding-bottom: 20px!important;
+                        }
+                    }
+                }            
+            }
+            .span-header {
+                h2 {
+                    width: 80%;
+                    font-size: 16px;
+                }
+            }
+            #subscribedCompaniesSection {
+                .span-header {
+                    margin-bottom: 0!important;
+                    h3 {
+                        a { 
+                            float: left;
+                            width: 100%;
+                            display: block;
+                        }
+                        label {
+                            float: left!important;
+                        }
+                    } 
+                }
+                #topTermsSection {
+                    ul#topTermsList {
+                        float: left;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        } 
+        .container {
+            .hdr {
+                margin-bottom: 10px!important;
+                .filtered-by {
+                    float: left!important;
+                    clear: both!important;
+                    margin-top: 5px!important;
+                }
+            }
+            #workAreasSection, #jurisdictionsSection, #termFrequency, #manzamaMentionsSection, #dailyReadsSection {
+                margin-bottom: 10px!important;
+            }
+            .articles-list {
+                .articles-list-header {
+                    .centredButtonsContainer {
+                        display: none;
+                    }
+                    .lhs {
+                        label {
+                            display: none!important;
+                        }
+                    }
+                } 
+            }
+            #main {
+                #thirdRow {
+                    margin-bottom: 0!important;
+                }
+            }
+        }
+    }
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+        
+}
